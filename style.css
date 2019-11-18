@@ -1,0 +1,314 @@
+.acebo {
+    position: absolute;
+    width: 5vw;
+    opacity: 0.5;
+    animation-duration: 3s;
+    animation-name: rote;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rote {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.renos {
+    animation-duration: 12s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+section {
+    position: relative;
+}
+
+section img {
+    position: absolute;
+    height: 14vh;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: -70%;
+    }
+    to {
+        margin-left: 70%;
+    }
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.top {
+    animation-name: fade;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+a:hover {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+a:link {
+    font-weight: bold;
+    color: black;
+}
+
+a:visited {
+    font-weight: bold;
+    color: black;
+}
+
+body {
+    background-image: url("imagenes/Bas.png");
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+.fn {
+    font-size: 4vw;
+    color: #fff;
+    text-align: center;
+    margin-top: 27%;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff, 0 0 1px #fff, 0 0 20px #77be38, 0 0 30px #77be38, 0 0 4px #77be38, 0 0 50px #77be38, 0 0 6px #77be38;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 20px #77be38, 0 0 30px #77be38, 0 0 40px #77be38, 0 0 50px #77be38, 0 0 60px #77be38, 0 0 70px #77be38;
+    }
+}
+
+.button {
+    color: #2c5b02;
+    border-radius: 10px;
+    border: none;
+    font-family: impact, georgia;
+    font-size: 1.2vw;
+    padding: 5px 50px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: px 5px black;
+    animation: glowing 3s infinite;
+    display: block;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 2%;
+}
+
+@keyframes glowing {
+    0% {
+        opacity: 50%;
+        background-color: #dcf3ff;
+        box-shadow: 0 0 3px #0174DF;
+    }
+    50% {
+        background-color: #dcf3ff;
+        box-shadow: 0 0 3px #0174DF;
+    }
+    100% {
+        opacity: 50%;
+        background-color: #dcf3ff;
+        box-shadow: 0 0 3px #0174DF;
+    }
+}
+
+.snowflake {
+    color: #dcf3ff;
+    font-size: 5vw;
+    font-family: Arial, sans-serif;
+    text-shadow: 0 0 5px #000;
+}
+
+@-webkit-keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@-webkit-keyframes snowflakes-shake {
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(80px)
+    }
+}
+
+@keyframes snowflakes-fall {
+    0% {
+        top: -10%
+    }
+    100% {
+        top: 100%
+    }
+}
+
+@keyframes snowflakes-shake {
+    0%,
+    100% {
+        transform: translateX(0)
+    }
+    50% {
+        transform: translateX(80px)
+    }
+}
+
+.snowflake {
+    position: fixed;
+    top: -10%;
+    z-index: 9999;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    cursor: default;
+    -webkit-animation-name: snowflakes-fall, snowflakes-shake;
+    -webkit-animation-duration: 10s, 3s;
+    -webkit-animation-timing-function: linear, ease-in-out;
+    -webkit-animation-iteration-count: infinite, infinite;
+    -webkit-animation-play-state: running, running;
+    animation-name: snowflakes-fall, snowflakes-shake;
+    animation-duration: 10s, 3s;
+    animation-timing-function: linear, ease-in-out;
+    animation-iteration-count: infinite, infinite;
+    animation-play-state: running, running
+}
+
+.snowflake:nth-of-type(0) {
+    left: 1%;
+    -webkit-animation-delay: 0s, 0s;
+    animation-delay: 0s, 0s
+}
+
+.snowflake:nth-of-type(1) {
+    left: 10%;
+    -webkit-animation-delay: 1s, 1s;
+    animation-delay: 1s, 1s
+}
+
+.snowflake:nth-of-type(2) {
+    left: 20%;
+    -webkit-animation-delay: 6s, .5s;
+    animation-delay: 6s, .5s
+}
+
+.snowflake:nth-of-type(3) {
+    left: 30%;
+    -webkit-animation-delay: 4s, 2s;
+    animation-delay: 4s, 2s
+}
+
+.snowflake:nth-of-type(4) {
+    left: 40%;
+    -webkit-animation-delay: 2s, 2s;
+    animation-delay: 2s, 2s
+}
+
+.snowflake:nth-of-type(5) {
+    left: 50%;
+    -webkit-animation-delay: 8s, 3s;
+    animation-delay: 8s, 3s
+}
+
+.snowflake:nth-of-type(6) {
+    left: 60%;
+    -webkit-animation-delay: 6s, 2s;
+    animation-delay: 6s, 2s
+}
+
+.snowflake:nth-of-type(7) {
+    left: 70%;
+    -webkit-animation-delay: 2.5s, 1s;
+    animation-delay: 2.5s, 1s
+}
+
+.snowflake:nth-of-type(8) {
+    left: 80%;
+    -webkit-animation-delay: 1s, 0s;
+    animation-delay: 1s, 0s
+}
+
+.snowflake:nth-of-type(9) {
+    left: 90%;
+    -webkit-animation-delay: 3s, 1.5s;
+    animation-delay: 3s, 1.5s
+}
+
+.snowflake:nth-of-type(10) {
+    left: 25%;
+    -webkit-animation-delay: 2s, 0s;
+    animation-delay: 2s, 0s
+}
+
+.snowflake:nth-of-type(11) {
+    left: 65%;
+    -webkit-animation-delay: 4s, 2.5s;
+    animation-delay: 4s, 2.5s
+}
+
+.autor {
+    text-shadow: 0.5px 0.5px #66a034, -0.5px -0.5px #2c5b02;
+    color: #2c5b02;
+    opacity: 0.5;
+    font-size: 1vw;
+    padding: 2%;
+    text-align: right;
+    animation: expand 5s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes expand {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(-1em);
+    }
+    40% {
+        transform: translateX(0.5em);
+    }
+    60% {
+        transform: translateX(-0.25em);
+    }
+    80% {
+        transform: translateX(0);
+    }
+}
